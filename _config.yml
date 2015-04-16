@@ -5,6 +5,12 @@ description: "Sistemas Empotrados y Computación Ubicua"
 markdown: redcarpet
 highlighter: pygments
 
+collections:
+ bloqs:
+  output: true
+ activities:
+  output: true
+
 paginate: 5
 permalink: /:title
 
