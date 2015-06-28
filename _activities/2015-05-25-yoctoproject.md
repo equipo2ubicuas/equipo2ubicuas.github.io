@@ -83,19 +83,19 @@ Poky hace uso de estos metadatos para extender OpenEmbedded- Core. Hay dos capas
 ### FLUJO DE TRABAJO EN POKY
 Es importante entender los conceptos básicos involucrados en el flujo de trabajo POKY.
 
-![imagen](/resources/PicsY/yp5.png)
+![imagen](/resources/PicsY/yp5.PNG)
 
 Inicialmente hay que descargar y configurar, preparar el entorno de compilación POKY y compilar para obtener el sistema objetivo.
 La construcción del sistema se realiza por capas.
 
-![imagen](/resources/PicsY/yp6.png)
+![imagen](/resources/PicsY/yp6.PNG)
 
 ### CONFIGURACIÓN DE UN SISTEMA
 
 
 El proceso necesario para establecer nuestro sistema empotrado depende de la distribución en la que va a correr el sistema. Poky tiene un conjunto de distribuciones de Linux preparadas, y si somos nuevos en el desarrollo de Linux embebido, es recomendable utilizar una de las distribuciones Linux compatibles para evitar perder tiempo en la depuración.
 
-![imagen](/resources/PicsY/yp7.png)
+![imagen](/resources/PicsY/yp7.PNG)
 
 Actualmente, las distribuciones compatibles son los siguientes:
 
@@ -133,7 +133,7 @@ Si la distribución elegida para nuestro sistema no está en la lista anterior, 
 
 Cuando no se tiene la suficiente experiencia se poden obtener resultados inesperados debido a que todos los paquetes que deben ser instalados en el sistema de acogida varían de una distribución a otra. Se puede encontrar las instrucciones para todas las distribuciones soportadas en el Manual de Referencia de Yocto Project.
 
-![imagen](/resources/PicsY/yp8.png)
+![imagen](/resources/PicsY/yp8.PNG)
 
 Para instalar los paquetes necesarios para Debian o Ubuntu ejecute el siguiente comando:
 
@@ -165,7 +165,7 @@ En este caso, buil-directory es un parámetro opcional para el nombre del direct
 ### El archivo local.conf
 Cuando inicializamos un entorno de compilación, se crea el archivo build/conf/local.conf, donde se guarda la configuración del equipo que estamos construyendo.
 
-![imagen](/resources/PicsY/yp9.png)
+![imagen](/resources/PicsY/yp9.PNG)
 
 Contiene la arquitectura del sistema anfitrión que se utilizarán para la compilación cruzada, con los parámetros de optimización para la máxima reducción del tiempo de construcción. Los comentarios dentro del archivo de *build/conf/local.conf* son una muy buena documentación y referencia de posibles variables y sus valores predeterminados.
 
@@ -180,7 +180,7 @@ MACHINE ??= "qemux86"
 ```
 Con la variable MÁCHINE se determina el equipo de destino que queremos construir.
 
-![imagen](/resources/PicsY/yp10.png)
+![imagen](/resources/PicsY/yp10.PNG)
 
 Actualmente Poky soporta los siguientes máquinas en su referencia Board Support Package (BSP):
 
@@ -195,7 +195,7 @@ Actualmente Poky soporta los siguientes máquinas en su referencia Board Support
 •	edgerouter
 
 
-![imagen](/resources/PicsY/yp11.png)
+![imagen](/resources/PicsY/yp11.PNG)
 
 
 Las máquinas necesitan de una capa llamada meta-yocto-bsp. Además de estas máquinas, OpenEmbedded-Core también proporciona soporte para:
@@ -223,7 +223,7 @@ $: ls meta*/recipes*/images/*.bb
 
 Todas las recetas proporcionan imágenes que son, en esencia, un conjunto de paquetes descomprimidos y configurados, generando un sistema que podemos utilizar en un hardware real. La lista de imágenes hasta a la fecha se puede ver en el Manual de Referencias de Yocto Project.
 
-![imagen](/resources/PicsY/yp12.png)
+![imagen](/resources/PicsY/yp12.PNG)
 
 El proceso de construcción de una imagen para un objetivo es muy simple. Hay que ejecutar el siguiente comando:  bitbake <nombre de la receta>
 Por ejemplo, la construcción de core-image-full-cmdline, ejecute el siguiente comando:
@@ -236,7 +236,7 @@ $: bitbake core-image-full-cmdline
 ##Ejecución de imágenes en QEMU
 Como muchos proyectos tienen una dependencia del hardware, la emulación de hardware viene a acelerar el proceso de desarrollo al permitir que la imagen pueda funcionar sin el hardware real.
 
-![imagen](/resources/PicsY/yp13.png)
+![imagen](/resources/PicsY/yp13.PNG)
 
 *Quick EMUlator (QEMU)* es un paquete de software libre y de código abierto que lleva a cabo la virtualización de hardware. Las máquinas basadas en QEMU permiten pruebas y desarrollo sin hardware real. En la actualidad, la ARM, MIPS, MIPS64, PowerPC y x86 y x86-64 son emulaciones compatibles. La manera de ejecutar el script es el siguiente:
 
@@ -244,7 +244,7 @@ Como muchos proyectos tienen una dependencia del hardware, la emulación de hard
 Runqemu _machine zImage  sistemas_de_archivos_
 ```
 
-![imagen](/resources/PicsY/yp14.png)
+![imagen](/resources/PicsY/yp14.PNG)
 
 ### Referencias
 
