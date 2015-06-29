@@ -53,7 +53,7 @@ Antes de poder continuar vamos a especificar que vamos a trabajar en un espacio 
 
 El modelo HSV (del inglés Hue, Saturation, Value – Matiz, Saturación, Valor), también llamado HSB (Hue, Saturation, Brightness – Matiz, Saturación, Brillo), define un modelo de color en términos de sus componentes.
 
-![HSV](/resources/triangulo_HSV.png)
+![HSV](/resources/Triangulo_HSV.png)
 
 Utilizando este Espacio de color, podemos visualizar la foto en dicho espacio.
 
