@@ -285,6 +285,12 @@ En esta sección, podremos administrar las conecciones, Pci, PCI-E y los distint
 
 Las otras secciones para el uso habitual de un ordenador no son necesarias.
 
+Dejamos aquí el resultado de la práctica con 2 videos con el procesador saturado y sin saturar.
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/OgO3oMWBdbk" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/anSZk1y-tkc" frameborder="0" allowfullscreen></iframe>
+
 Para mayor información se utilizará la información proporcionada en las webs:
 
 [www.redeszone.net][4]
